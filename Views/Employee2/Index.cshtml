@@ -1,0 +1,14 @@
+﻿@model IEnumerable<WebApplication4.Model.Department>
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Department List</h2>
+<ul>
+    @foreach(var dept in Model)
+            {
+    <li>
+        @Html.ActionLink(dept.Name, "EmployeeList", "Employee2", new { id = dept.Id }, null)
+    </li>
+            }
+</ul>

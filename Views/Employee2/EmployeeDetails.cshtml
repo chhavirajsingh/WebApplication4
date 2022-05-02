@@ -1,0 +1,42 @@
+﻿@model WebApplication4.Model.Employee
+@{
+    ViewBag.Title = "EmployeeDetails";
+}
+
+<h2>Employee Details</h2>
+
+<div class="card">
+    <div class="card-header">
+        <h4 class="card-title">Employee Details</h4>
+    </div>
+    <div class="card-body">
+        <table>
+            <tr>
+                <td>
+                    <label>Employee Name :</label>
+                </td>
+                <td><label>@Model.Name</label></td>
+            </tr>
+            <tr>
+                <td>
+                    <label>Employee Email :</label>
+                </td>
+                <td><label>@Model.Email</label></td>
+            </tr>
+
+            <tr>
+                <td>
+                    <label>Employee Mobile :</label>
+                </td>
+                <td><label>@Model.Mobile</label></td>
+            </tr>
+
+            <tr>
+                <td>
+                    <label>Employee Gender :</label>
+                </td>
+                <td><label>@Model.Gender</label></td>
+            </tr>
+        </table>
+    </div>
+</div>
